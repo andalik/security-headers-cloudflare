@@ -21,11 +21,11 @@ Resumidamente, Workers permite que você execute códigos serverless em JS, Rust
 A página oficial do projeto é https://workers.cloudflare.com
 
 
-### Entendendo e customizando
+### Customização dos Security Headers
 
 Como a Cloudflare não dispõe de recursos nativos para customizar os security headers, podemos nos valer desta funcionalidade para no momento do acesso executar primeiro nosso código em JS, e em seguida, repassar a execução para o servidor de destino.
 
-Recomendo a revisão e customização dos security headers exibidos abaixo para atender as necessidades de segurança do seu site e/ou serviço.
+Antes de colar o código JS no Workers, recomendo a revisão e customização dos security headers para atender as necessidades de segurança do seu site e/ou serviço.
 
 ````
 let securityHeaders = {
@@ -42,7 +42,7 @@ let securityHeaders = {
 }
 ````
 
-### Implementando e ativando
+### Implementação e Ativação
 
 Acesse o painel de controle da Cloudflare e clique em Workers.
 Em seguida, clique em Manage Workers.
