@@ -25,6 +25,29 @@ A página oficial do projeto é https://workers.cloudflare.com
 
 Como a Cloudflare não dispõe de recursos nativos para customizar os security headers, podemos utilizar desta funcionalidade para no momento do acesso executar nosso código em JS, alterar os security headers, e em seguida, repassar a execução para o servidor de destino.
 
+
+
+````
+let securityHeaders = {
+	"Content-Security-Policy" : "default-src 'self'; frame-ancestors 'none'",
+	"Strict-Transport-Security" : "max-age=31536000; includeSubDomains; preload",
+	"X-Xss-Protection" : "1; mode=block",
+	"X-Frame-Options" : "DENY",
+	"X-Content-Type-Options" : "nosniff",
+	"Referrer-Policy" : "no-referrer, strict-origin-when-cross-origin",
+	"Permissions-Policy" : "geolocation=(), microphone=()",
+	"Cache-Control" : "private, max-age=0, no-cache, no-store, must-revalidate",
+	"Pragma" : "no-cache",
+	"Content-Type" : "text/html; charset=UTF-8",
+}
+````
+
+
+
+
+
+
+
 Acesse o painel de controle da Cloudflare e clique em Workers.
 Em seguida, clique em Manage Workers.
 Agora, clique em Create Workers, e na area esquerda da tela, cole o código security-headers-cf.js.
