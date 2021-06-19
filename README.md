@@ -43,7 +43,7 @@ let securityHeaders = {
 }
 ````
 
-### Implementação e Ativação:
+### Configuração e Ativação:
 
 Acesse o painel de controle da Cloudflare e clique em Workers.
 
