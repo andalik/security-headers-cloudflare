@@ -24,7 +24,7 @@ A página oficial do projeto é https://workers.cloudflare.com
 
 ### Customização dos Security Headers:
 
-Como a Cloudflare não dispõe de recursos nativos para customizar os security headers, podemos nos valer desta funcionalidade para no momento do acesso executar primeiro nosso código em JS, e em seguida, repassar a execução para o servidor de destino.
+Como a Cloudflare não dispõe de recursos nativos para customizar os Security Headers, podemos nos valer do Workers para no momento do acesso executar primeiro nosso código em JS, e em seguida, repassar a execução para o servidor de destino.
 
 Antes de colar o código JS no Workers, recomendo a revisão e customização dos security headers para atender as necessidades de segurança do seu site e/ou serviço.
 
@@ -46,7 +46,9 @@ let securityHeaders = {
 ### Implementação e Ativação:
 
 Acesse o painel de controle da Cloudflare e clique em Workers.
+
 Em seguida, clique em Manage Workers.
+
 Agora, clique em Create Workers, e na area esquerda da tela, cole o código security-headers-cf.js.
 
 Aproveite e renomeie o script para security-headers-cf e clique em Save and Deploy.
