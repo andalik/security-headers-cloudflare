@@ -53,7 +53,6 @@ Agora, clique em **Create Workers**, e na area esquerda da tela, cole o código 
 
 Aproveite e renomeie o script para security-headers-cf e clique em **Save and Deploy**.
 \
-\
 Novamente na tela do Workers, clique em **Add route**.
 
 Em Route, especifique a url, por exemplo, www.andalik.com.br/*
