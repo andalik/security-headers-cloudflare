@@ -45,21 +45,21 @@ let securityHeaders = {
 
 ### Configuração e Ativação:
 
-Acesse o painel de controle da Cloudflare e clique em Workers.
+Acesse o painel de controle da Cloudflare e clique em **Workers**.
 
-Em seguida, clique em Manage Workers.
+Em seguida, clique em **Manage Workers**.
 
-Agora, clique em Create Workers, e na area esquerda da tela, cole o código [security-headers-cf.js](https://github.com/andalik/security-headers-cloudflare/blob/main/security-headers-cf.js).
+Agora, clique em **Create Workers**, e na area esquerda da tela, cole o código [security-headers-cf.js](https://github.com/andalik/security-headers-cloudflare/blob/main/security-headers-cf.js).
 
-Aproveite e renomeie o script para security-headers-cf e clique em Save and Deploy.
+Aproveite e renomeie o script para security-headers-cf e clique em **Save and Deploy**.
 
 
-Novamente na tela do Workers, clique em Add route.
+Novamente na tela do Workers, clique em **Add route**.
 
 Em Route, especifique a url, por exemplo, www.andalik.com.br/*
 e em Worker, selecione security-headers-cf
 
-Clique em Save.
+Clique em **Save**.
 
 Pronto!
 Para validar, acesse https://securityheaders.com
