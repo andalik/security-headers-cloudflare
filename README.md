@@ -49,7 +49,7 @@ Acesse o painel de controle da Cloudflare e clique em Workers.
 
 Em seguida, clique em Manage Workers.
 
-Agora, clique em Create Workers, e na area esquerda da tela, cole o código security-headers-cf.js.
+Agora, clique em Create Workers, e na area esquerda da tela, cole o código [security-headers-cf.js](https://github.com/andalik/security-headers-cloudflare/blob/main/security-headers-cf.js).
 
 Aproveite e renomeie o script para security-headers-cf e clique em Save and Deploy.
 
