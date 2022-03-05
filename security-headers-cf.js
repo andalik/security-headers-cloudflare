@@ -8,7 +8,6 @@ let securityHeaders = {
 	"Permissions-Policy" : "geolocation=(), microphone=()",
 	"Cache-Control" : "private, max-age=0, no-cache, no-store, must-revalidate",
 	"Pragma" : "no-cache",
-	"Content-Type" : "text/html; charset=UTF-8",
 }
 
 let sanitiseHeaders = {
